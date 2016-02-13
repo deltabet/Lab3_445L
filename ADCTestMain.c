@@ -155,45 +155,7 @@ void Timer3A_Handler(void){
 	k += 1;
 }
 
-void ST7735_Line(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2, uint16_t color){
-	int32_t moveX, moveY, iX, iY, margin;
-	if (x1 > 128) x1 = 128;
-	if (x2 > 128) x1 = 128;
-	if (y1 > 160) y1 = 160;
-	if (y2 > 160) y2 = 160;
-	moveX = (x2 - x1);
-	moveY = (y2 - y1);
-	iX = ((moveX > 0) - (moveX < 0));
-	iY = ((moveY > 0) - (moveY < 0));
-	moveX = abs(moveX) << 1;
-	moveY = abs(moveY) << 1;
-  ST7735_DrawPixel(x1, y1, color);
-	
-	if (moveX >= moveY){
-		margin = moveY - (moveX >> 1);
-		while (x1 != x2){
-			if ((margin >= 0) && (margin || (iX > 0))){
-				margin -= moveX;
-				y1 += iY;
-			}		
-			margin += moveY;
-			x1 += iX;
-			ST7735_DrawPixel(x1, y1, color);
-		}
-	}
-	else{
-		margin = moveX - (moveY >> 1);
-		while (y1 != y2){
-			if ((margin >= 0) && (margin || (iY > 0))){
-				margin -= moveY;
-				x1 += iX;
-			}		
-			margin += moveX;
-			y1 += iY;
-			ST7735_DrawPixel(x1, y1, color);
-		}
-	}
-}
+
 //int main(void){
 //	uint32_t timejitter, j, min, max, outsidecount;
 //	int32_t PMFtemp;

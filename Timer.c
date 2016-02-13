@@ -20,7 +20,7 @@ struct Clock {
 	uint8_t seconds;
 	uint8_t minutes;
 	uint8_t hours;
-};
+}Clock;
 
 void Timer0A_Init60HzInt(void){
   volatile uint32_t delay;

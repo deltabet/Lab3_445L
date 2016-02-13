@@ -144,7 +144,7 @@
             <UsePdscDebugDescription>1</UsePdscDebugDescription>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>4</TargetSelection>
+          <TargetSelection>3</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -429,81 +429,6 @@
               <FileName>ST7735.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\ST7735.c</FilePath>
-            </File>
-            <File>
-              <FileName>Alarm_main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Alarm_main.c</FilePath>
-            </File>
-            <File>
-              <FileName>Display.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Display.c</FilePath>
-            </File>
-            <File>
-              <FileName>Sound.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Sound.c</FilePath>
-            </File>
-            <File>
-              <FileName>Switch.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Switch.c</FilePath>
-            </File>
-            <File>
-              <FileName>Timer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Timer.c</FilePath>
-            </File>
-            <File>
-              <FileName>ADCSWTrigger.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\ADCSWTrigger.h</FilePath>
-            </File>
-            <File>
-              <FileName>Display.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Display.h</FilePath>
-            </File>
-            <File>
-              <FileName>PLL.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\PLL.h</FilePath>
-            </File>
-            <File>
-              <FileName>Sound.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Sound.h</FilePath>
-            </File>
-            <File>
-              <FileName>ST7735.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\ST7735.h</FilePath>
-            </File>
-            <File>
-              <FileName>Switch.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Switch.h</FilePath>
-            </File>
-            <File>
-              <FileName>Timer.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Timer.h</FilePath>
-            </File>
-            <File>
-              <FileName>FruitsCandy.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\FruitsCandy.h</FilePath>
-            </File>
-            <File>
-              <FileName>Systick.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Systick.h</FilePath>
-            </File>
-            <File>
-              <FileName>Systick.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Systick.c</FilePath>
             </File>
           </Files>
         </Group>
