@@ -43,8 +43,6 @@ char AMPMtemp = 0;
 char alarmAMPM = 0;
 
 int main(void){
-	uint32_t timejitter, j, min, max, outsidecount;
-	int32_t PMFtemp;
   PLL_Init(Bus80MHz);                   // 80 MHz
   SYSCTL_RCGCGPIO_R |= 0x20;            // activate port F
   //ADC0_InitSWTriggerSeq3_Ch9();         // allow time to finish activating
@@ -60,17 +58,22 @@ int main(void){
 	Timer0A_Init60HzInt();  //updates time every second
 	Timer1_Init();	//sound
 	Timer2_Init();
-	Switch_Init();					//interrupts on switch press
+	//Switch_Init();					//interrupts on switch press
 	ST7735_InitR(INITR_REDTAB);
 	ST7735_PlotClear(0,160);
+		play = 0;
+		TIMER1_CTL_R = 0x00000000;
 	EnableInterrupts();	
 	ST7735_Circle(ST7735_BLACK);
-	drawClockHands(hour, minute, 1);
+	//drawClockHands(hour, minute, 1);
 	drawDigTime(hour, minute, AMPM);
 	ST7735_SetCursor(2, 14);
 	printf("<");
 	ST7735_SetCursor(18, 14);
 	printf(">");
+	drawClockHands(2,30,1);
+		play = 1;
+		TIMER1_CTL_R = 0x00000001;
 	while(1){
 		
 	}
@@ -78,7 +81,7 @@ int main(void){
 
 //These are not the actual functions, but templates to implement, possibly in "switch.c"
 
-
+/*
 void ModeButton(void){
 	if (!alarmGoingOff){
 	mode = (mode + 1) % 4;
@@ -196,3 +199,5 @@ void DownButton(void){
 	}
 	}
 }
+*/
+

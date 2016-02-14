@@ -5,7 +5,7 @@ extern unsigned long Button;
 extern unsigned char play;
 extern unsigned long noteCount;
 extern unsigned char noteTime;
-unsigned char songSet;
+extern unsigned char songSet;
 
 void Timer2_Init(void);
 	

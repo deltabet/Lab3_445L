@@ -1,0 +1,12 @@
+.\alarm_main.o: Alarm_main.c
+.\alarm_main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\alarm_main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\alarm_main.o: tm4c123gh6pm.h
+.\alarm_main.o: PLL.h
+.\alarm_main.o: ST7735.h
+.\alarm_main.o: Timer.h
+.\alarm_main.o: Switch.h
+.\alarm_main.o: Sound.h
+.\alarm_main.o: Display.h
+.\alarm_main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\alarm_main.o: Systick.h

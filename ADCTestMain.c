@@ -70,7 +70,7 @@ void Timer0A_Init100HzInt(void){
   NVIC_PRI4_R = (NVIC_PRI4_R&0x00FFFFFF)|0x40000000; // top 3 bits
   NVIC_EN0_R |= 1<<19;              // enable interrupt 19 in NVIC
 }
-void Timer0A_Handler(void){
+/*void Timer0A_Handler(void){
   TIMER0_ICR_R = TIMER_ICR_TATOCINT;    // acknowledge timer0A timeout
 	 PF2 ^= 0x04;                   // profile
 	first = TIMER1_TAR_R;
@@ -127,7 +127,7 @@ void Timer2_Init(void){
 // vector number 37, interrupt number 21
   NVIC_EN0_R |= 1<<23;           // 9) enable IRQ 23 in NVIC
   TIMER2_CTL_R = 0x00000001;    // 10) enable TIMER1A
-}
+}*/
 
 void Timer3_Init(void){
 	volatile uint32_t delay;
