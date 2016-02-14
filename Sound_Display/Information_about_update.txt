@@ -1,0 +1,19 @@
+These are the files I had in the seperate folder that I managed to get working. I added these files to the "ST7735" project from lab 1 and replaced the main function.
+
+
+I used timers 2 and 3 for the alarm sound. I used ports E2-5 for the alarm sound, ports A for the display, and ports F for the buttons, which I have not implemented.
+
+
+I think the behaivor of the alarm should be something like this:
+
+Button 1 switches modes between main menu, set time, set alarm, and set song.
+
+In main menu, the analog and digital clock updates normally.
+
+In set time, pressing 1 button increases the temporary minute counter, and pressing anouther increases the temporary hour counter. Pressing the "set" button permanatly changes the time.
+
+In set alarm, the hour and minute buttons act the same. Pressing the set button sets the alarm at that time, or unsets the alarm.
+
+In set song, pushing either hour or minute button will change the song. Pushing set sets the song. 
+
+
